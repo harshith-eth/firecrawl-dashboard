@@ -4,7 +4,7 @@ import { AppSidebar } from "../../components/app-sidebar"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { SquareTerminal, LayoutDashboard, Newspaper, MessageSquare, Globe, BellRing, BookOpen, FolderTree } from "lucide-react"
 
-export default function RemoteJobs() {
+export default function AppDirectory() {
   return (
     <SidebarProvider defaultOpen={true}>
       <AppSidebar 
@@ -27,8 +27,7 @@ export default function RemoteJobs() {
           {
             title: "Remote Job Alert",
             url: "/remote-jobs",
-            icon: BellRing,
-            isActive: true
+            icon: BellRing
           },
           {
             title: "Chat with Website",
@@ -43,7 +42,8 @@ export default function RemoteJobs() {
           {
             title: "Firecrawl App Directory",
             url: "/app-directory",
-            icon: FolderTree
+            icon: FolderTree,
+            isActive: true
           }
         ]}
       />
@@ -62,11 +62,11 @@ export default function RemoteJobs() {
             {/* Main heading and buttons */}
             <div className="flex justify-between items-center flex-col sm:flex-row gap-4 sm:gap-0">
               <h1 className="text-3xl font-bold tracking-tight">
-                Remote Job Alert Generator
+                Firecrawl App Directory
               </h1>
               <div className="flex items-center gap-2 flex-col sm:flex-row w-full sm:w-auto">
                 <a 
-                  href="https://remote-job-alert.vercel.app"
+                  href="https://firecrawl-app-directory-crbi.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-3 py-1.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm w-full sm:w-auto"
@@ -76,10 +76,10 @@ export default function RemoteJobs() {
                     <line x1="2" y1="12" x2="22" y2="12"/>
                     <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                   </svg>
-                  <span className="hidden sm:inline">Visit Website</span>
+                  <span className="hidden sm:inline">Browse Apps</span>
                 </a>
                 <a 
-                  href="https://github.com/harshith-eth/remote-job-alert"
+                  href="https://github.com/harshith-eth/firecrawl-app-directory"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-3 py-1.5 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm w-full sm:w-auto"
@@ -99,9 +99,12 @@ export default function RemoteJobs() {
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                   Built with Firecrawl
                 </span>
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                  React + TypeScript
+                </span>
               </div>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Transform job listings into beautifully formatted remote job alerts using AI-powered content generation. Built completely open source using the Firecrawl API for reliable job listing scraping.
+                A curated collection of AI-powered applications built with Firecrawl's API. Explore innovative tools that demonstrate the power of web crawling, content processing, and AI integration.
               </p>
             </div>
             
@@ -113,43 +116,43 @@ export default function RemoteJobs() {
                   {/* Features Card */}
                   <div className="rounded-xl bg-white/30 backdrop-blur p-3 border border-white/20 shadow-[0_2px_8px_-1px_rgba(249,115,22,0.05)] hover:shadow-[0_4px_12px_-1px_rgba(249,115,22,0.1)] transition-shadow h-full flex flex-col">
                     <div>
-                      <h2 className="text-lg font-semibold mb-1.5">Key Features</h2>
+                      <h2 className="text-lg font-semibold mb-1.5">Featured Apps</h2>
                       <p className="text-sm text-muted-foreground mb-3">
-                        An open-source project I built using Firecrawl's API to revolutionize job alert creation.
+                        Discover powerful applications built with Firecrawl's technology
                       </p>
                     </div>
 
                     <div className="flex-1 flex flex-col justify-between">
                       <div className="space-y-2.5">
                         <div className="flex gap-2.5 items-start group">
-                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">🔍</div>
+                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">📰</div>
                           <div>
-                            <h3 className="font-medium text-sm">Firecrawl Integration</h3>
-                            <p className="text-muted-foreground text-xs leading-relaxed">Leveraging Firecrawl's powerful API for precise job data extraction from any URL</p>
+                            <h3 className="font-medium text-sm">TechCrunch to Newsletter</h3>
+                            <p className="text-muted-foreground text-xs leading-relaxed">Transform TechCrunch articles into engaging newsletters with AI</p>
                           </div>
                         </div>
 
                         <div className="flex gap-2.5 items-start group">
-                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">🤖</div>
+                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">💼</div>
                           <div>
-                            <h3 className="font-medium text-sm">Azure OpenAI Processing</h3>
-                            <p className="text-muted-foreground text-xs leading-relaxed">Custom-built prompts for transforming raw data into engaging job descriptions</p>
+                            <h3 className="font-medium text-sm">Remote Job Alert</h3>
+                            <p className="text-muted-foreground text-xs leading-relaxed">AI-powered job descriptions from any remote job posting</p>
                           </div>
                         </div>
 
                         <div className="flex gap-2.5 items-start group">
-                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">📝</div>
+                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">🌐</div>
                           <div>
-                            <h3 className="font-medium text-sm">Structured Output</h3>
-                            <p className="text-muted-foreground text-xs leading-relaxed">Carefully formatted sections including role details, requirements, and company culture</p>
+                            <h3 className="font-medium text-sm">Chat with Website</h3>
+                            <p className="text-muted-foreground text-xs leading-relaxed">Interactive conversations with any website's content</p>
                           </div>
                         </div>
 
                         <div className="flex gap-2.5 items-start group">
-                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">📋</div>
+                          <div className="h-5 w-5 rounded-full bg-orange-500 flex items-center justify-center text-white font-medium shrink-0 group-hover:scale-110 transition-transform">📚</div>
                           <div>
-                            <h3 className="font-medium text-sm">Modern Tech Stack</h3>
-                            <p className="text-muted-foreground text-xs leading-relaxed">Built with React 18, TypeScript, Vite, and TailwindCSS for optimal performance</p>
+                            <h3 className="font-medium text-sm">Paul Graham AI</h3>
+                            <p className="text-muted-foreground text-xs leading-relaxed">Chat with an AI trained on Paul Graham's essays</p>
                           </div>
                         </div>
                       </div>
@@ -160,14 +163,19 @@ export default function RemoteJobs() {
                 {/* Right column - Demo/Preview */}
                 <div className="w-full md:flex-1 h-full">
                   <div className="rounded-xl bg-white/30 backdrop-blur p-3 border border-white/20 shadow-[0_2px_8px_-1px_rgba(249,115,22,0.05)] hover:shadow-[0_4px_12px_-1px_rgba(249,115,22,0.1)] transition-shadow h-full">
-                    <div className="aspect-video w-full">
-                      <iframe
-                        src="https://www.youtube.com/embed/28Jdc3MQzyo"
-                        title="Remote Job Alert Demo"
-                        className="w-full h-full rounded-lg"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      />
+                    <div className="aspect-video flex items-center justify-center rounded-lg overflow-hidden">
+                      <a 
+                        href="https://firecrawl-app-directory-crbi.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full h-full"
+                      >
+                        <img
+                          src="/images/app-directory.png"
+                          alt="Firecrawl Apps Overview"
+                          className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -176,12 +184,10 @@ export default function RemoteJobs() {
               {/* About section */}
               <div className="flex-1">
                 <div className="rounded-xl bg-white/30 backdrop-blur p-3.5 border border-white/20 space-y-3 shadow-[0_2px_8px_-1px_rgba(249,115,22,0.05)] hover:shadow-[0_4px_12px_-1px_rgba(249,115,22,0.1)] transition-shadow">
-                  <h2 className="text-lg font-semibold">Project Implementation</h2>
+                  <h2 className="text-lg font-semibold">About the Directory</h2>
                   <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>1. Built a seamless integration with Firecrawl's API to extract structured job data from any URL with perfect accuracy</p>
-                    <p>2. Implemented custom Azure OpenAI prompts to transform raw job data into engaging, well-formatted descriptions</p>
-                    <p>3. Developed an intuitive UI that generates professional job alerts with consistent formatting for responsibilities, qualifications, and benefits</p>
-                    <p>4. Deployed on Vercel with automated CI/CD pipeline for instant updates and perfect uptime</p>
+                    <p>The Firecrawl App Directory showcases innovative applications built using Firecrawl's powerful API and Azure OpenAI integration. Each app demonstrates unique ways to transform web content into valuable tools and services.</p>
+                    <p>From automating content creation to enabling AI-powered conversations with web content, these applications highlight the versatility and potential of Firecrawl's technology stack. All apps are open-source and built with modern web technologies.</p>
                   </div>
                 </div>
               </div>

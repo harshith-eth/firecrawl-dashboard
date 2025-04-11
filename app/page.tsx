@@ -2,7 +2,7 @@
 
 import { AppSidebar } from "../components/app-sidebar"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { SquareTerminal, LayoutDashboard, Twitter, MessageSquare, Globe, Newspaper, BellRing, BookOpen } from "lucide-react"
+import { SquareTerminal, LayoutDashboard, Twitter, MessageSquare, Globe, Newspaper, BellRing, BookOpen, FolderTree } from "lucide-react"
 
 export default function Home() {
   return (
@@ -39,6 +39,11 @@ export default function Home() {
             title: "Paul Graham AI",
             url: "/paul-graham-ai",
             icon: BookOpen
+          },
+          {
+            title: "Firecrawl App Directory",
+            url: "/app-directory",
+            icon: FolderTree
           }
         ]}
       />
